@@ -1,0 +1,38 @@
+<header class="site-header">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Navigation principale">
+
+      <a href="/" class="nav-logo" aria-label="Les Serres du Jansau - Accueil">
+        <span class="brand">Les Serres du Jansau</span>
+        <span class="sub">Les Artisans du Vegetal - Gaillac</span>
+      </a>
+
+      <ul class="nav-links" id="nav-menu">
+        {{ range .Site.Menus.main }}
+          {{ if eq .Identifier "contact" }}
+            <li><a href="{{ .URL }}" class="nav-cta">{{ .Name }}</a></li>
+          {{ else }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+
+      <div class="nav-right">
+        <a href="https://www.facebook.com/p/Serres-du-jansau-100057701858135/" target="_blank" rel="noopener" aria-label="Facebook" class="nav-social">
+          <img src="/images/facebook-green.svg" width="18" height="18" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/les_serres_du_jansau/" target="_blank" rel="noopener" aria-label="Instagram" class="nav-social">
+          <img src="/images/instagram-green.svg" width="18" height="18" alt="Instagram">
+        </a>
+        <a class="nav-phone" href="tel:0563570481" aria-label="Appeler les Serres du Jansau">
+          📞 {{ .Site.Params.telephone }}
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </nav>
+  </div>
+</header>

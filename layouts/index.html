@@ -1,0 +1,173 @@
+{{ define "main" }}
+
+<!-- ================ HERO ================ -->
+<section class="hero">
+  <div class="hero-deco"></div><div class="hero-deco-2"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">🌿 Les Artisans du Végétal · Labellisé</div>
+      <h1>Votre horticulteur<br>artisan à Gaillac</h1>
+      <p class="hero-sub">Depuis 1968, Les Serres du Jansau cultivent sur place plus de 3 000 variétés de plantes, fleurs, arbres et légumes — adaptés au terroir du Tarn.</p>
+      <div class="hero-actions">
+        <a href="/catalogue/" class="btn btn-primary">Découvrir notre catalogue</a>
+        <a href="/contact/" class="btn btn-outline">Nous contacter</a>
+      </div>
+      <div class="hero-info">
+        <div class="hero-info-item"><span class="label">Ouverture</span><span class="value">7j/7 (saison)</span></div>
+        <div class="hero-info-item"><span class="label">Superficie</span><span class="value">8 ha + 2 000 m²</span></div>
+        <div class="hero-info-item"><span class="label">Variétés</span><span class="value">+3 000 espèces</span></div>
+        <div class="hero-info-item"><span class="label">Téléphone</span><span class="value"><a href="tel:0563570481" style="color:inherit">05 63 57 04 81</a></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================ GALERIE SERRES ================ -->
+<section style="padding: 3rem 0 0">
+  <div class="container">
+    <div class="gallery" style="grid-template-columns: repeat(4, 1fr); gap:.75rem">
+      <div class="gallery-item"><img src="/images/serres/serres-04.jpg" alt="Nos serres" loading="lazy"></div>
+      <div class="gallery-item"><img src="/images/serres/serres-05.jpg" alt="Nos serres" loading="lazy"></div>
+      <div class="gallery-item"><img src="/images/serres/serres-06.jpg" alt="Productions" loading="lazy"></div>
+      <div class="gallery-item"><img src="/images/serres/serres-07.jpg" alt="Plantes serres" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================ CATALOGUE CATEGORIES ================ -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Nos productions</span>
+      <h2>Ce que nous cultivons</h2>
+      <p>Toutes nos plantes sont produites sur place, dans le respect de l'environnement et de la biodiversité locale.</p>
+    </div>
+    <div class="catalogue-grid">
+
+      <a href="/catalogue/fleurs/" class="cat-card">
+        <div class="cat-card-img">
+          <img src="/images/chrysanthemes/yooky-rose.jpg" alt="Fleurs et massifs">
+        </div>
+        <div class="cat-card-body">
+          <span class="cat-tag">Floraison</span>
+          <h3>Fleurs &amp; Massifs</h3>
+          <p>Chrysanthèmes, cyclamens, bégonias, pensées — 13 variétés de chrysanthèmes cultivées sur place.</p>
+        </div>
+      </a>
+
+      <a href="/catalogue/arbres-arbustes/" class="cat-card">
+        <div class="cat-card-img cat-card-img--logo"><img src="/images/logo.svg" alt="Arbres &amp; Arbustes"></div>
+        <div class="cat-card-body">
+          <span class="cat-tag">Pépinière</span>
+          <h3>Arbres &amp; Arbustes</h3>
+          <p>Plus de 3 000 variétés cultivées en pleine terre sur 8 ha, meilleure reprise garantie.</p>
+        </div>
+      </a>
+
+      <a href="/catalogue/potager/" class="cat-card">
+        <div class="cat-card-img">
+          <img src="/images/legumes/tomate-gourmandia.jpg" alt="Légumes et potager">
+        </div>
+        <div class="cat-card-body">
+          <span class="cat-tag">Potager</span>
+          <h3>Légumes &amp; Potager</h3>
+          <p>15+ variétés de tomates, aubergines, courgettes, salades — dont de nombreuses variétés anciennes.</p>
+        </div>
+      </a>
+
+      <a href="/catalogue/plantes-interieur/" class="cat-card">
+        <div class="cat-card-img cat-card-img--logo"><img src="/images/logo.svg" alt="Plantes d'intérieur"></div>
+        <div class="cat-card-body">
+          <span class="cat-tag">Intérieur</span>
+          <h3>Plantes d'intérieur</h3>
+          <p>Exotiques, graminées, bambous, orchidées et succulentes pour embellir vos espaces.</p>
+        </div>
+      </a>
+
+      <a href="/catalogue/produits-jardin/" class="cat-card">
+        <div class="cat-card-img">
+          <img src="/images/terreaux/rempotage-argill45l.jpg" alt="Produits jardin">
+        </div>
+        <div class="cat-card-body">
+          <span class="cat-tag">Accessoires</span>
+          <h3>Produits jardin</h3>
+          <p>Terreaux, engrais, poteries décoratives — les mêmes produits que nous utilisons.</p>
+        </div>
+      </a>
+
+      <a href="/catalogue/fruitiers/" class="cat-card">
+        <div class="cat-card-img cat-card-img--logo"><img src="/images/logo.svg" alt="Arbres fruitiers"></div>
+        <div class="cat-card-body">
+          <span class="cat-tag">Fruitiers</span>
+          <h3>Arbres fruitiers</h3>
+          <p>Pommiers, poiriers, cerisiers et petits fruits adaptés au climat du Tarn.</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================ LABEL ARTISAN ================ -->
+<section style="padding-top:0"><div class="container">
+  <div class="label-banner">
+    <div class="badge"><span>70%</span>Production<br>locale garantie</div>
+    <div class="label-banner-text">
+      <h3>Label « Artisans du Végétal »</h3>
+      <p>Depuis 2005, ce label garantit qu'au minimum 70 % des végétaux proposés sont produits sur place, dans le Tarn. Un gage de qualité, de fraîcheur et de proximité.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- ================ ENGAGEMENTS ================ -->
+<section class="engagements">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Nos engagements</span>
+      <h2>Une culture respectueuse</h2>
+      <p>Nous cultivons autrement — pour la santé de vos plantes et de la planète.</p>
+    </div>
+    <div class="engagements-grid">
+      <div class="engagement-card"><div class="engagement-icon">🏠</div><h3>Serres froides</h3><p>Très peu de chauffage. Des plantes plus vigoureuses et moins d'énergie consommée.</p></div>
+      <div class="engagement-card"><div class="engagement-icon">🐞</div><h3>Protection biologique</h3><p>Coccinelles et chrysopes remplacent les pesticides. 100 % naturel.</p></div>
+      <div class="engagement-card"><div class="engagement-icon">💧</div><h3>Récupération d'eau</h3><p>Eaux de pluie et d'arrosage récupérées et réutilisées. Zéro gaspillage.</p></div>
+      <div class="engagement-card"><div class="engagement-icon">🌍</div><h3>Biodiversité</h3><p>3 000+ variétés cultivées favorisent un équilibre naturel.</p></div>
+      <div class="engagement-card"><div class="engagement-icon">🔬</div><h3>Culture raisonnée</h3><p>Les phytosanitaires utilisés uniquement en dernier recours.</p></div>
+      <div class="engagement-card"><div class="engagement-icon">🏡</div><h3>Production locale</h3><p>Cultivé sur place, dans le Tarn. Moins de transport, plus de qualité.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:3rem"><a href="/notre-approche/" class="btn btn-green">En savoir plus sur notre approche</a></div>
+  </div>
+</section>
+
+<!-- ================ HORAIRES & INFOS ================ -->
+<section class="info-section">
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-block">
+        <h3>📅 Horaires d'ouverture</h3>
+        <table class="horaires-table">
+          <tr><td>Lun–Sam</td><td>9h–12h / 14h–19h</td></tr>
+          <tr><td>Dimanche</td><td>9h–19h (saison)</td></tr>
+        </table>
+        <br><p style="font-size:.85rem;opacity:.7">
+          <strong style="color:#b7e4c7">Avr–Juin &amp; Sept–Oct :</strong> 7j/7<br>
+          <strong style="color:#b7e4c7">Juil–Août :</strong> 9h–12h<br>
+          <strong style="color:#b7e4c7">Nov–Mars :</strong> 9h–12h / 14h–18h
+        </p>
+      </div>
+      <div class="info-block">
+        <h3>📍 Nous trouver</h3>
+        <p><strong style="color:#fff">4377 chemin Toulze<br>81600 GAILLAC</strong></p>
+        <br><p>📞 <strong style="color:#fff"><a href="tel:0563570481" style="color:#fff">05 63 57 04 81</a></strong></p>
+        <br><a href="https://maps.google.com/?q=4377+chemin+Toulze+81600+Gaillac" target="_blank" class="info-link">📍 Voir l'itinéraire →</a>
+      </div>
+      <div class="info-block">
+        <h3>📄 Documents gratuits</h3>
+        <p>Guides de jardinage, tableaux de semis et fiches variétés à télécharger gratuitement.</p>
+        <br><a href="/documents/" class="btn btn-primary" style="display:inline-flex">Voir les documents →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,48 @@
+baseURL = "https://serresdujansau.fr/"
+languageCode = "fr-FR"
+title = "Les Serres du Jansau"
+defaultContentLanguage = "fr"
+
+[params]
+  description = "Artisan du végétal à Gaillac — plantes, fleurs, arbres et potagers cultivés sur place"
+  telephone = "05 63 57 04 81"
+  adresse = "4377 chemin Toulze, 81600 GAILLAC"
+  email = "contact@serresdujansau.fr"
+  mapsUrl = "https://maps.google.com/?q=4377+chemin+Toulze+81600+Gaillac"
+
+[menu]
+  [[menu.main]]
+    identifier = "accueil"
+    name = "Accueil"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "catalogue"
+    name = "Catalogue"
+    url = "/catalogue/"
+    weight = 2
+  [[menu.main]]
+    identifier = "notre-approche"
+    name = "Notre approche"
+    url = "/notre-approche/"
+    weight = 3
+  [[menu.main]]
+    identifier = "a-propos"
+    name = "Qui sommes-nous"
+    url = "/a-propos/"
+    weight = 4
+  [[menu.main]]
+    identifier = "documents"
+    name = "Documents"
+    url = "/documents/"
+    weight = 5
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

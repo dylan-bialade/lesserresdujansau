@@ -1,0 +1,136 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Accueil</a> &nbsp;›&nbsp; Contact</div>
+    <h1>Nous contacter</h1>
+    <p>Une question, un conseil, une commande ? Nous répondons rapidement.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-wrapper">
+
+      <!-- Infos -->
+      <div class="contact-info">
+        <h2>Venez nous rendre visite</h2>
+        <p>Nos équipes sont disponibles pour vous conseiller sur place ou par téléphone.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <strong>Adresse</strong>
+            <span>4377 chemin Toulze<br>81600 GAILLAC</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-text">
+            <strong>Téléphone</strong>
+            <span><a href="tel:0563570481">05 63 57 04 81</a></span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🕐</div>
+          <div class="contact-detail-text">
+            <strong>Horaires</strong>
+            <span>
+              Lun–Sam : 9h–12h / 14h–19h<br>
+              Dimanche : 9h–19h (saison)<br>
+              <em>Avr–Juin &amp; Sept–Oct : 7j/7</em>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🗺️</div>
+          <div class="contact-detail-text">
+            <strong>Itinéraire</strong>
+            <span>
+              <a href="https://maps.google.com/?q=4377+chemin+Toulze+81600+Gaillac" target="_blank" rel="noopener">
+                Voir sur Google Maps →
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <!-- Carte intégrée OpenStreetMap -->
+        <div style="margin-top:2rem;border-radius:12px;overflow:hidden;border:1px solid var(--green-100)">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=1.86,43.87,1.92,43.91&layer=mapnik&marker=43.8953,1.8939"
+            width="100%" height="220" style="border:0" loading="lazy"
+            title="Carte Les Serres du Jansau">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <div class="form-card">
+        <h3 style="margin-bottom:1.5rem">Envoyez-nous un message</h3>
+
+        <!--
+          FORMULAIRE STATIQUE — Options d'envoi :
+          1. Formspree : remplacez l'action par https://formspree.io/f/VOTRE_ID
+          2. Netlify Forms : ajoutez l'attribut data-netlify="true"
+          3. EmailJS : voir https://www.emailjs.com
+        -->
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/VOTRE_ID_FORMSPREE"
+          method="POST"
+        >
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+            </div>
+            <div class="form-row">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="votre@email.fr">
+          </div>
+
+          <div class="form-row">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="06 XX XX XX XX">
+          </div>
+
+          <div class="form-row">
+            <label for="sujet">Sujet *</label>
+            <select id="sujet" name="sujet" required>
+              <option value="">Choisissez un sujet…</option>
+              <option value="information">Demande d'information</option>
+              <option value="plantes">Disponibilité d'une plante</option>
+              <option value="conseil">Conseil jardinage</option>
+              <option value="commande">Commande spéciale</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Votre message…"></textarea>
+          </div>
+
+          <!-- Anti-spam honeypot -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <button type="submit" class="btn btn-green" style="width:100%;justify-content:center;margin-top:.5rem">
+            ✉️ Envoyer le message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{ end }}

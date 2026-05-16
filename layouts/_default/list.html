@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Accueil</a> &nbsp;›&nbsp; {{ .Title }}</div>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<div class="catalogue-list">
+  <div class="container">
+    {{ .Content }}
+    {{ if .Pages }}
+    <div class="catalogue-grid">
+      {{ range .Pages }}
+      <a href="{{ .Permalink }}" class="cat-card">
+        <div class="cat-card-img">
+          {{ with .Params.emoji }}<span>{{ . }}</span>{{ else }}🌿{{ end }}
+        </div>
+        <div class="cat-card-body">
+          {{ with .Params.tag }}<span class="cat-tag">{{ . }}</span>{{ end }}
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Params.description | default .Summary }}</p>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

@@ -1,0 +1,11 @@
+# Dossier ancien site (ne pas committer)
+old/
+
+# Hugo
+public/
+resources/_gen/
+.hugo_build.lock
+
+# OS
+.DS_Store
+Thumbs.db

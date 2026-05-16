@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Serre (structure) -->
+  <rect x="18" y="58" width="84" height="48" rx="3" fill="#2d6a4f" opacity="0.15"/>
+  <path d="M14 60 Q60 18 106 60" stroke="#1b4332" stroke-width="4" fill="#2d6a4f" fill-opacity="0.2"/>
+  <rect x="20" y="60" width="80" height="46" rx="2" fill="none" stroke="#2d6a4f" stroke-width="3"/>
+  <!-- Vitres -->
+  <line x1="60" y1="28" x2="60" y2="106" stroke="#40916c" stroke-width="1.5" opacity="0.6"/>
+  <line x1="20" y1="60" x2="106" y2="60" stroke="#40916c" stroke-width="1.5" opacity="0.6"/>
+  <line x1="37" y1="44" x2="37" y2="106" stroke="#40916c" stroke-width="1" opacity="0.4"/>
+  <line x1="83" y1="44" x2="83" y2="106" stroke="#40916c" stroke-width="1" opacity="0.4"/>
+  <!-- Porte -->
+  <rect x="48" y="80" width="24" height="26" rx="2" fill="#1b4332" opacity="0.25" stroke="#1b4332" stroke-width="1.5"/>
+  <!-- Plante gauche -->
+  <ellipse cx="34" cy="72" rx="9" ry="7" fill="#40916c" opacity="0.8"/>
+  <ellipse cx="28" cy="76" rx="7" ry="5" fill="#52b788" opacity="0.7"/>
+  <line x1="34" y1="72" x2="34" y2="86" stroke="#1b4332" stroke-width="2"/>
+  <!-- Plante droite -->
+  <ellipse cx="86" cy="72" rx="9" ry="7" fill="#40916c" opacity="0.8"/>
+  <ellipse cx="92" cy="76" rx="7" ry="5" fill="#52b788" opacity="0.7"/>
+  <line x1="86" y1="72" x2="86" y2="86" stroke="#1b4332" stroke-width="2"/>
+  <!-- Feuille décorative en haut -->
+  <path d="M56 14 C56 14 48 8 44 14 C40 20 50 26 56 22 C62 26 72 20 68 14 C64 8 56 14 56 14Z" fill="#52b788"/>
+  <line x1="56" y1="14" x2="56" y2="22" stroke="#2d6a4f" stroke-width="1.2"/>
+</svg>
