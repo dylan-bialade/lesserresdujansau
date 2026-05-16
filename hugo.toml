@@ -2,6 +2,7 @@ baseURL = "https://serresdujansau.fr/"
 languageCode = "fr-FR"
 title = "Les Serres du Jansau"
 defaultContentLanguage = "fr"
+canonifyURLs = true
 
 [params]
   description = "Artisan du végétal à Gaillac — plantes, fleurs, arbres et potagers cultivés sur place"
