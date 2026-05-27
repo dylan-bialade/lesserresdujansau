@@ -34,7 +34,7 @@ jobs:
 
       - name: Build with Hugo
         run: |
-          hugo --minify --baseURL "https://dylan-bialade.github.io/lesserresdujansau/"
+          hugo --minify --baseURL "https://serredujansau.fr/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
