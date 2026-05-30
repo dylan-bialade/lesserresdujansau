@@ -5,11 +5,12 @@ defaultContentLanguage = "fr"
 canonifyURLs = true
 
 [params]
-  description = "Artisan du végétal à Gaillac — plantes, fleurs, arbres et potagers cultivés sur place"
+  description = "Artisan du vegetal a Gaillac"
   telephone = "05 63 57 04 81"
   adresse = "4377 chemin Toulze, 81600 GAILLAC"
   email = "contact@serresdujansau.fr"
   mapsUrl = "https://maps.google.com/?q=4377+chemin+Toulze+81600+Gaillac"
+  juicer_feed = ""
 
 [menu]
   [[menu.main]]
@@ -33,15 +34,20 @@ canonifyURLs = true
     url = "/a-propos/"
     weight = 4
   [[menu.main]]
+    identifier = "jardins-en-photos"
+    name = "Vos jardins"
+    url = "/jardins-en-photos/"
+    weight = 5
+  [[menu.main]]
     identifier = "documents"
     name = "Documents"
     url = "/documents/"
-    weight = 5
+    weight = 6
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 6
+    weight = 7
 
 [markup]
   [markup.goldmark]

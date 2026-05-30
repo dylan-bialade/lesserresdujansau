@@ -7,15 +7,15 @@
     <div class="hero-content">
       <div class="hero-badge">🌿 Les Artisans du Végétal · Labellisé</div>
       <h1>Votre horticulteur<br>artisan à Gaillac</h1>
-      <p class="hero-sub">Depuis 1968, Les Serres du Jansau cultivent sur place plus de 3 000 variétés de plantes, fleurs, arbres et légumes — adaptés au terroir du Tarn.</p>
+      <p class="hero-sub">Depuis 1968, Les Serres du Jansau cultivent sur place fleurs, plants potagers et chrysanthèmes — dans nos serres de 2 000 m² à Gaillac, dans le Tarn.</p>
       <div class="hero-actions">
         <a href="/catalogue/" class="btn btn-primary">Découvrir notre catalogue</a>
         <a href="/contact/" class="btn btn-outline">Nous contacter</a>
       </div>
       <div class="hero-info">
         <div class="hero-info-item"><span class="label">Ouverture</span><span class="value">7j/7 (saison)</span></div>
-        <div class="hero-info-item"><span class="label">Superficie</span><span class="value">8 ha + 2 000 m²</span></div>
-        <div class="hero-info-item"><span class="label">Variétés</span><span class="value">+3 000 espèces</span></div>
+        <div class="hero-info-item"><span class="label">Superficie</span><span class="value">2 000 m² de serres</span></div>
+        <div class="hero-info-item"><span class="label">Depuis</span><span class="value">1968</span></div>
         <div class="hero-info-item"><span class="label">Téléphone</span><span class="value"><a href="tel:0563570481" style="color:inherit">05 63 57 04 81</a></span></div>
       </div>
     </div>
@@ -55,15 +55,6 @@
         </div>
       </a>
 
-      <a href="/catalogue/arbres-arbustes/" class="cat-card">
-        <div class="cat-card-img cat-card-img--logo"><img src="/images/logo.svg" alt="Arbres &amp; Arbustes"></div>
-        <div class="cat-card-body">
-          <span class="cat-tag">Pépinière</span>
-          <h3>Arbres &amp; Arbustes</h3>
-          <p>Plus de 3 000 variétés cultivées en pleine terre sur 8 ha, meilleure reprise garantie.</p>
-        </div>
-      </a>
-
       <a href="/catalogue/potager/" class="cat-card">
         <div class="cat-card-img">
           <img src="/images/legumes/tomate-gourmandia.jpg" alt="Légumes et potager">
@@ -75,15 +66,6 @@
         </div>
       </a>
 
-      <a href="/catalogue/plantes-interieur/" class="cat-card">
-        <div class="cat-card-img cat-card-img--logo"><img src="/images/logo.svg" alt="Plantes d'intérieur"></div>
-        <div class="cat-card-body">
-          <span class="cat-tag">Intérieur</span>
-          <h3>Plantes d'intérieur</h3>
-          <p>Exotiques, graminées, bambous, orchidées et succulentes pour embellir vos espaces.</p>
-        </div>
-      </a>
-
       <a href="/catalogue/produits-jardin/" class="cat-card">
         <div class="cat-card-img">
           <img src="/images/terreaux/rempotage-argill45l.jpg" alt="Produits jardin">
@@ -92,15 +74,6 @@
           <span class="cat-tag">Accessoires</span>
           <h3>Produits jardin</h3>
           <p>Terreaux, engrais, poteries décoratives — les mêmes produits que nous utilisons.</p>
-        </div>
-      </a>
-
-      <a href="/catalogue/fruitiers/" class="cat-card">
-        <div class="cat-card-img cat-card-img--logo"><img src="/images/logo.svg" alt="Arbres fruitiers"></div>
-        <div class="cat-card-body">
-          <span class="cat-tag">Fruitiers</span>
-          <h3>Arbres fruitiers</h3>
-          <p>Pommiers, poiriers, cerisiers et petits fruits adaptés au climat du Tarn.</p>
         </div>
       </a>
 
@@ -131,7 +104,7 @@
       <div class="engagement-card"><div class="engagement-icon">🏠</div><h3>Serres froides</h3><p>Très peu de chauffage. Des plantes plus vigoureuses et moins d'énergie consommée.</p></div>
       <div class="engagement-card"><div class="engagement-icon">🐞</div><h3>Protection biologique</h3><p>Coccinelles et chrysopes remplacent les pesticides. 100 % naturel.</p></div>
       <div class="engagement-card"><div class="engagement-icon">💧</div><h3>Récupération d'eau</h3><p>Eaux de pluie et d'arrosage récupérées et réutilisées. Zéro gaspillage.</p></div>
-      <div class="engagement-card"><div class="engagement-icon">🌍</div><h3>Biodiversité</h3><p>3 000+ variétés cultivées favorisent un équilibre naturel.</p></div>
+      <div class="engagement-card"><div class="engagement-icon">🌍</div><h3>Biodiversité</h3><p>Nos nombreuses variétés cultivées favorisent un équilibre naturel.</p></div>
       <div class="engagement-card"><div class="engagement-icon">🔬</div><h3>Culture raisonnée</h3><p>Les phytosanitaires utilisés uniquement en dernier recours.</p></div>
       <div class="engagement-card"><div class="engagement-icon">🏡</div><h3>Production locale</h3><p>Cultivé sur place, dans le Tarn. Moins de transport, plus de qualité.</p></div>
     </div>
@@ -139,32 +112,72 @@
   </div>
 </section>
 
-<!-- ================ HORAIRES & INFOS ================ -->
+<!-- ================ FLUX RESEAUX SOCIAUX ================ -->
+{{ if .Site.Params.juicer_feed }}
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Suivez-nous</span>
+      <h2>Nos dernières publications</h2>
+      <p>Instagram et Facebook — les nouveautés, les arrivages et la vie des serres en temps réel.</p>
+    </div>
+    <ul class="juicer-feed" data-feed-id="{{ .Site.Params.juicer_feed }}" data-per="9" data-truncate="100"></ul>
+    <script src="https://assets.juicer.io/embed.js" async defer></script>
+    <link rel="stylesheet" href="https://assets.juicer.io/embed.css" media="all">
+    <div style="text-align:center;margin-top:1.5rem">
+      <a href="https://www.instagram.com/les_serres_du_jansau/" target="_blank" rel="noopener" class="btn btn-outline" style="margin-right:.75rem">Instagram</a>
+      <a href="https://www.facebook.com/p/Serres-du-jansau-100057701858135/" target="_blank" rel="noopener" class="btn btn-outline">Facebook</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ================ VOS JARDINS EN PHOTOS ================ -->
+<section>
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Nos clients</span>
+      <h2>Vos jardins en photos</h2>
+      <p>Ils ont fleuri leur maison avec nos plantes — voici leurs belles réalisations.</p>
+    </div>
+    <div class="gallery" style="grid-template-columns: repeat(4, 1fr); gap:.75rem">
+      <div class="gallery-item"><img src="/images/jardins-clients/jardin-1.jpg" alt="Terrasse avec pots et géraniums" loading="lazy"></div>
+      <div class="gallery-item"><img src="/images/jardins-clients/jardin-2.jpg" alt="Maison en pierre avec balcon fleuri" loading="lazy"></div>
+      <div class="gallery-item"><img src="/images/jardins-clients/jardin-3.jpg" alt="Entrée avec lavande et géraniums" loading="lazy"></div>
+      <div class="gallery-item"><img src="/images/jardins-clients/jardin-4.jpg" alt="Cour en pierre avec pots fleuris" loading="lazy"></div>
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <a href="/jardins-en-photos/" class="btn btn-green">Voir toutes les photos</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================ HORAIRES et INFOS ================ -->
 <section class="info-section">
   <div class="container">
     <div class="info-grid">
       <div class="info-block">
-        <h3>📅 Horaires d'ouverture</h3>
+        <h3>Horaires d'ouverture</h3>
         <table class="horaires-table">
-          <tr><td>Lun–Sam</td><td>9h–12h / 14h–19h</td></tr>
-          <tr><td>Dimanche</td><td>9h–19h (saison)</td></tr>
+          <tr><td>Lun-Sam</td><td>9h-12h / 14h-19h</td></tr>
+          <tr><td>Dimanche</td><td>9h-19h (saison)</td></tr>
         </table>
         <br><p style="font-size:.85rem;opacity:.7">
-          <strong style="color:#b7e4c7">Avr–Juin &amp; Sept–Oct :</strong> 7j/7<br>
-          <strong style="color:#b7e4c7">Juil–Août :</strong> 9h–12h<br>
-          <strong style="color:#b7e4c7">Nov–Mars :</strong> 9h–12h / 14h–18h
+          <strong style="color:#b7e4c7">Avr-Juin et Sept-Oct :</strong> 7j/7<br>
+          <strong style="color:#b7e4c7">Juil-Aout :</strong> 9h-12h<br>
+          <strong style="color:#b7e4c7">Nov-Mars :</strong> 9h-12h / 14h-18h
         </p>
       </div>
       <div class="info-block">
-        <h3>📍 Nous trouver</h3>
+        <h3>Nous trouver</h3>
         <p><strong style="color:#fff">4377 chemin Toulze<br>81600 GAILLAC</strong></p>
-        <br><p>📞 <strong style="color:#fff"><a href="tel:0563570481" style="color:#fff">05 63 57 04 81</a></strong></p>
-        <br><a href="https://maps.google.com/?q=4377+chemin+Toulze+81600+Gaillac" target="_blank" class="info-link">📍 Voir l'itinéraire →</a>
+        <br><p>Tél : <strong style="color:#fff"><a href="tel:0563570481" style="color:#fff">05 63 57 04 81</a></strong></p>
+        <br><a href="https://maps.google.com/?q=4377+chemin+Toulze+81600+Gaillac" target="_blank" class="info-link">Voir l'itinéraire</a>
       </div>
       <div class="info-block">
-        <h3>📄 Documents gratuits</h3>
+        <h3>Documents gratuits</h3>
         <p>Guides de jardinage, tableaux de semis et fiches variétés à télécharger gratuitement.</p>
-        <br><a href="/documents/" class="btn btn-primary" style="display:inline-flex">Voir les documents →</a>
+        <br><a href="/documents/" class="btn btn-primary" style="display:inline-flex">Voir les documents</a>
       </div>
     </div>
   </div>
